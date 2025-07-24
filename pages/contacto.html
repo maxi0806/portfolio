@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Maximo Urrutia</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/4467706a55.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <section id="contacto" class="form-section">
+        <h2>Contacto</h2>
+        <form action="https://formsubmit.co/maximourrutia806@gmail.com" method="POST" class="formulario-contacto">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+
+        <div class="volver-container">
+            <a href="/index.html" class="btn volver-btn">← Volver al inicio</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Maximo Urrutia - Todos los derechos reservados</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/urrutiamaximo_/?hl=es" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://github.com/maxi0806" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/m%C3%A1ximo-urrutia-24a250317/?trk=public-profile-join-page"
+                    target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <header>
+        <div class="modo">
+                <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+                <input type="checkbox" id="toggle" onchange="document.body.classList.toggle('modo-claro')">
+            </div>
+    </header>
+
+    <script src="/pages/contacto.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>
